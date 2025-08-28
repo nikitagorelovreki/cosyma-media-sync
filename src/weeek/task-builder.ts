@@ -1,4 +1,14 @@
-import { MediaItem, WeeekTaskPayload } from '../types';
+/**
+ * ⚠️  DEPRECATED: WEEEK Task Builder
+ * 
+ * This module is deprecated and will be removed in future versions.
+ * The main functionality of this application is Google Sheets export.
+ * 
+ * WEEEK integration is kept for backward compatibility only.
+ * Do not use for new projects.
+ */
+
+import { MediaItem, WeeekTaskPayload, MediaType } from '../types';
 import * as crypto from 'crypto';
 
 export class TaskBuilder {

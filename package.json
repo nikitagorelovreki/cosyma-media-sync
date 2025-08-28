@@ -1,38 +1,54 @@
 {
-  "name": "media-sync",
+  "name": "cosyma-media-sync",
   "version": "1.0.0",
-  "description": "Одноразовая синхронизация медиафайлов в WEEEK",
-  "main": "dist/index.js",
+  "description": "Автоматический экспорт медиафайлов в Google Sheets с миниатюрами",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "ts-node src/index.ts",
     "dev": "ts-node src/index.ts",
-    "dry-run": "ts-node src/index.ts --dry-run",
+    "build": "tsc",
+    
     "google-docs": "ts-node src/google-docs/index.ts",
     "google-docs:dry-run": "ts-node src/google-docs/index.ts --dry-run",
+    
+    "sync": "ts-node src/index.ts",
+    "sync:dry-run": "ts-node src/index.ts --dry-run",
+    
     "proxy-server": "ts-node src/proxy-server/index.ts"
   },
+  "keywords": [
+    "google-sheets",
+    "media-export",
+    "thumbnails",
+    "mailru-cloud",
+    "yandex-disk",
+    "automation"
+  ],
+  "author": "Nikita Gorelov",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",
-    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
+    "googleapis": "^128.0.0",
     "express": "^4.18.2",
-    "googleapis": "^128.0.0"
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
     "@types/node": "^20.8.0",
-    "ts-node": "^10.9.0",
-    "typescript": "^5.2.0"
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
-  "keywords": [
-    "media",
-    "sync",
-    "weeek",
-    "yandex",
-    "mailru"
-  ],
-  "author": "",
-  "license": "MIT"
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikitagorelovreki/cosyma-media-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikitagorelovreki/cosyma-media-sync/issues"
+  },
+  "homepage": "https://github.com/nikitagorelovreki/cosyma-media-sync#readme"
 }

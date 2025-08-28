@@ -1,3 +1,13 @@
+/**
+ * ⚠️  DEPRECATED: WEEEK Integration
+ * 
+ * This module is deprecated and will be removed in future versions.
+ * The main functionality of this application is Google Sheets export.
+ * 
+ * WEEEK integration is kept for backward compatibility only.
+ * Do not use for new projects.
+ */
+
 import axios, { AxiosInstance } from 'axios';
 import { 
   WeeekCustomField, 

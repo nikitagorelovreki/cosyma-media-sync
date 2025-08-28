@@ -1,5 +1,17 @@
-#!/usr/bin/env node
+/**
+ * ⚠️  WEEEK Integration (DEPRECATED)
+ * 
+ * This is the WEEEK integration entry point, which is deprecated.
+ * The main functionality of this application is Google Sheets export.
+ * 
+ * For new projects, use:
+ *   npm run google-docs          # Export to Google Sheets
+ *   npm run google-docs:dry-run  # Preview export
+ * 
+ * WEEEK integration is kept for backward compatibility only.
+ */
 
+import dotenv from 'dotenv';
 import { ConfigLoader } from './config';
 import { MediaSync } from './sync/media-sync';
 import { SyncResult } from './types';
