@@ -1,0 +1,18 @@
+# Примеры ссылок для тестирования Media Sync
+# Раскомментируйте нужные строки для тестирования
+
+# Яндекс.Диск - папка
+# https://disk.yandex.ru/d/example_folder_id
+
+# Яндекс.Диск - файл
+# https://disk.yandex.ru/i/example_file_id
+
+# Яндекс.360 - папка
+# https://disk.360.yandex.ru/d/example_360_folder_id
+
+# Mail.ru Cloud - публичная папка
+# https://cloud.mail.ru/public/example_public_id
+
+# Примеры реальных ссылок (замените на свои):
+# https://disk.yandex.ru/d/your_folder_id_here
+# https://cloud.mail.ru/public/your_public_id_here 
